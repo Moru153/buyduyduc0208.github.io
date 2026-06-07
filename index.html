@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Gửi Vợ yêu Đức</title>
+    <style>
+        body { text-align: center; font-family: 'Arial', sans-serif; padding-top: 100px; background-color: #ffeef2; }
+        h1 { color: #d63031; }
+        .btn { padding: 15px 30px; font-size: 18px; margin: 10px; cursor: pointer; border: none; border-radius: 10px; }
+        #yesBtn { background-color: #55efc4; }
+        #noBtn { background-color: #ff7675; position: absolute; }
+    </style>
+</head>
+<body>
+    <h1>Vợ yêu Đức ơi, tha lỗi cho chồng nha? 😭</h1>
+    <p>Nếu không chọn hoặc thoát ra là tha lỗi cho anh đấy!</p>
+    <button class="btn" id="yesBtn" onclick="alert('Yêu Vợ yêu Đức nhất trên đờii! ❤️')">Đồng ý tha lỗi</button>
+    <button class="btn" id="noBtn" onmouseover="moveButton()">Không chịuuu </button>
+
+    <script>
+        function moveButton() {
+            var x = Math.random() * (window.innerWidth - 150);
+            var y = Math.random() * (window.innerHeight - 150);
+            document.getElementById('noBtn').style.left = x + 'px';
+            document.getElementById('noBtn').style.top = y + 'px';
+        }
+    </script>
+</body>
+</html>
